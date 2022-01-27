@@ -1,0 +1,12 @@
+span{
+    /* Inline Element can only have left and right margin */
+    display: inline-block; 
+    margin: 20px;
+    padding: 20px;
+}
+div{
+    /* display: inline; */
+    border: 2px solid crimson;
+    margin: 20px;
+    padding: 20px;
+}

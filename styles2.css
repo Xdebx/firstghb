@@ -1,0 +1,102 @@
+ /* Same classes but different element 
+ParentElement.ChildElement
+ParentElement.ChildClassElement
+ParentElelement ChildClassElement
+ParentElelement .ChildClassElement
+
+h1{
+    text-align: center;
+}
+p.error{
+    color:brown;
+}
+div.error{
+    color: darkgoldenrod;
+}
+p.success{
+    color: #4fdb4f;
+}
+
+p.success.feedback{
+    color: #46810a;
+}
+
+#content{
+    background-color: darkgray;
+    padding: 20px;
+} 
+
+
+/* Malalagyan ng color lahat ng child p element sa loob ng parent element na div */
+
+
+/* div p{
+    color: #2a15b4;
+} */
+
+
+/* childclass error na nasa loob ng div kaya may space pero kapag walang space yan yung nasa labas ng div yung maapplyan ng declaration (decendant selector) */
+
+
+/* div .error{ 
+    color:#08f0f0;
+}   */
+
+
+
+/* Anchor tag copy paste all link*/
+
+a[href="http://ww.thenetninja.co.uk"]{
+    background-color: forestgreen;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+/*  Anchor tag kahit lagyan mo lang ng clue wordds na nasa link */
+
+/* a[href*="ninja"]{
+    background-color: forestgreen;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+} */
+
+
+
+a[href*="google"]{
+    color: tomato;
+    background-color: #fff;
+    border: 2px solid blue;
+}
+
+
+/* a[href$=".com"]{
+    color: tomato;
+    background-color: #fff;
+    border: 2px solid blue;
+} */
+
+div{
+    color: lightcoral;
+    border: 1px solid green;
+    margin: 40px;
+    font-weight: bold;
+}
+div p{
+    border: inherit;
+    margin: inherit;
+    color:lightcoral;
+}
+
+p{
+    color: orange;
+    margin: 40px; 
+}
+
+
+
+

@@ -4,7 +4,7 @@ body, ul, li, h1, h2, a{
     font-family: arial;
 }
 header{
-    background-color: orangered;
+    background-color: rgb(255, 68, 0);
     padding: 30px;
     text-align: center;
     position: fixed;
@@ -112,7 +112,7 @@ footer{
     padding: 10px;
     text-align: center;
 }
-/* Pseudp classes */
+/* Pseudo classes */
 nav li a:hover{
     text-decoration: underline;
 }
@@ -133,4 +133,94 @@ form input:valid{
 article p::first-line{
     font-weight: bold;
     font-size: 1.2em;
+}
+section.join p::first-letter{
+    font-size: 1.5em;
+}
+p::selection{
+    background-color: #F63232;
+    color: white;
+}
+p::after{
+    content: '...';
+}
+/* responsive design */
+ @media screen and (max-width: 1400px) {
+    
+    .banner .welcome h2{
+       font-size: 60px;
+       padding: 20px;
+    }
+    nav li{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 960px) {
+    
+    .banner .welcome h2{
+       font-size: 40px;
+    }
+}
+@media screen and (max-width: 700px) {
+    
+    .banner .welcome {
+      position: relative;
+      text-align: center;
+      padding: 10px;
+    }
+    .banner .welcome br{
+        display: none;
+    }
+    .banner .welcome h2{
+        font-size: 25px;
+    }
+    .banner .welcome span{
+        font-size: 1em;
+    }
+    .images li{
+        width: 100%;
+        margin: 20px auto;
+        display: block;
+    }
+}
+@media screen and (max-width: 560px) { 
+
+    nav li{
+        font-size: 20px;
+        display: block;
+        width: 100%;
+        margin: 15px 0;
+    }
+    header{
+        position: relative;
+    }
+    nav{
+        top: 0;
+    }
+} 
+@media screen and (max-width: 375px) { 
+
+    .banner h2{
+        font-size: 70px;
+    }
+  .banner .welcome {
+    position: relative;
+    text-align: center;
+    padding: 5px;
+  }
+  .banner .welcome br{
+      display: none;
+  }
+  .banner .welcome h2{
+      font-size: 25px;
+  }
+  .banner .welcome span{
+      font-size: 1em;
+  }
+  .images li{
+      width: 100%;
+      margin: 20px auto;
+      display: block;
+  }
+
 }

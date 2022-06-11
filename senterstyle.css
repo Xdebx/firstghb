@@ -1,0 +1,22 @@
+/* Option 1 centering div */
+/* .senter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+/*!==================================
+/* Option 2 centering div */
+/* .senter{
+    display: flex;
+   justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+} */
+/*!==================================
+/* Option 3 centering div */
+.senter{
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}

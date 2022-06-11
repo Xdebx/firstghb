@@ -1,5 +1,5 @@
+/*! Inline Element can only have left and right margin */
 span{
-    /* Inline Element can only have left and right margin */
     display: inline-block; 
     margin: 20px;
     padding: 20px;

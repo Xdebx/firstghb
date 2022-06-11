@@ -27,7 +27,7 @@ p.success.feedback{
 } 
 
 
-/* Malalagyan ng color lahat ng child p element sa loob ng parent element na div */
+/*! Malalagyan ng color lahat ng child p element sa loob ng parent element na div */
 
 
 /* div p{
@@ -35,7 +35,7 @@ p.success.feedback{
 } */
 
 
-/* childclass error na nasa loob ng div kaya may space pero kapag walang space yan yung nasa labas ng div yung maapplyan ng declaration (decendant selector) */
+/*! childclass error na nasa loob ng div kaya may space pero kapag walang space yan yung nasa labas ng div yung maapplyan ng declaration (decendant selector) */
 
 
 /* div .error{ 
@@ -44,7 +44,7 @@ p.success.feedback{
 
 
 
-/* Anchor tag copy paste all link*/
+/*! Anchor tag copy paste all link*/
 
 a[href="http://ww.thenetninja.co.uk"]{
     background-color: forestgreen;
@@ -55,7 +55,7 @@ a[href="http://ww.thenetninja.co.uk"]{
 }
 
 
-/*  Anchor tag kahit lagyan mo lang ng clue wordds na nasa link */
+/*!  Anchor tag kahit lagyan mo lang ng clue wordds na nasa link */
 
 /* a[href*="ninja"]{
     background-color: forestgreen;

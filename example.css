@@ -8,17 +8,42 @@
 
 .parent {
   display: grid;
-  grid-template-rows: 5rem auto;
+  grid-template-rows: 3rem auto;
   /* grid-template-rows: 1fr 1fr; */
 }
 
 .navbar {
-  background-color: cadetblue;
+  /* background-color: rgb(0, 0, 0);
+  display: grid; */
+  /* grid-template-columns: 1fr 2fr 1fr; */
+  /* grid-template-columns: 1fr auto;
+  gap: 2rem;
+  border-radius: 20px 20px 20px 20px; */
+/*!===================================== */
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  justify-content: center;
+  grid-template-columns: auto;
+  
+  /* align-items: center; */
+  /* padding: 1.5rem; */
+  font-family: "Roboto", sans-serif;
+  /*box-shadow: 5px 5px 5px #888888; */
+  box-shadow: 5px 5px 5px #00FFFF; 
+  /*background: #f2f2f2;*/
+  background: linear-gradient(#141e30, #243b55);
+  border-radius: 20px 40px 60px 80px;
+  border: 1px solid;
+  font-size: 15px;
+
+
+
+
+
+
 }
 
-.navbar-title {
+/* .navbar-title {
+  color: #00FFFF;
   grid-column: 2/3;
   display: grid;
   justify-content: start;
@@ -26,13 +51,7 @@
   padding: 0 2rem;
   font-size: 2rem;
   font-weight: 900;
-}
-
-.navbar-button {
-  background-color: black;
-  color: white;
-  cursor: pointer;
-}
+} */
 
 .child {
   display: grid;
@@ -41,6 +60,7 @@
 
 .sidebar {
   background-color: gray;
+ 
 
 }
 
@@ -48,7 +68,7 @@
 /* Note: Kung ano yung last na properties na dineclared mo yun yung maapply sa website */
   padding: 2rem 20rem 15rem 1rem;  /* (Top) (Right) (Bottom) (Left) */
   padding: 2rem 5rem; /* 2rem(Top&Bottom) 5rem(Left&Right) */
-  color: black;  /* para malagyan ng color yung text */
+  color: white;  /* para malagyan ng color yung text */
   font-weight: 700; /* pampakapal ng text */
   font-size: 1.3rem; /* Size ng font mo */
   line-height: 2rem; /* Space between paragraph */
@@ -68,3 +88,93 @@
 .s1{
     padding: 2rem;
 }
+body{
+  background: radial-gradient(#224646,#182828) repeat;
+  /*background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);*/
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; 
+}
+.navbar-button-container{
+  display: grid;
+  /* grid-template-columns: repeat(8, 1fr); */
+  grid-auto-flow: column;
+  gap: 4rem;
+}
+.logo{
+  padding-right: 25rem;
+  padding-left: 2rem;
+  font-size: 1.5rem;
+  color: #00FFFF;
+}
+
+.navbar-brand {
+    transition: 0.5s;
+    text-decoration: none;
+    text-align: center;
+    /* width: 180px; */
+    /* width: fit-content; */
+    width: 100%;
+    padding: 0.5rem 0rem;
+    background: none;
+    /* font-size: 1.5rem; */
+    font-size: 19px;
+    color: #00FFFF;
+    border: 2px solid #00FFFF;
+    border-radius: 5px; 
+    /* outline: none; */
+    border-style: none;
+}
+
+.navbar-brand:hover {
+  /* text-decoration: none; */
+  /* width: fit-content; */
+  /* width: 100%; */
+  /* padding: 0.5rem; */
+  transition: 0.5s;
+  background:#00FFFF;
+  color: black;
+  box-shadow: 0px 0px 40px #00FFFF; 
+  border: 2px solid #00FFFF;
+  /* border-radius: 5px; */
+  border-radius: 20px 40px 60px 80px;
+  /* cursor: pointer; */
+}
+p::first-letter{
+  font-size: 3rem;
+  color: aqua;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* .search {
+  padding: 0.25rem 0.5rem;
+  display: grid;
+  justify-items: start;
+  align-items: center;
+  height: 100%;
+}
+
+.search-bar {
+    position: relative;
+    width: 10%;
+}
+.icon-search {
+      position: absolute;
+      color: #b40f00;
+      left: 0.8rem;
+      top: 0.2rem;
+    }
+.search-input {
+      width: 100%;
+      color: #b40f00;
+      height: min-content;
+      padding-left: 2rem;
+      font-size: 1.2rem;
+      border: 0.1rem solid #b40f00;
+      border-radius: 0.95rem;
+      outline: none;
+    } */
